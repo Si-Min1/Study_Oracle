@@ -7,7 +7,7 @@ SELECT ename, job, hiredate FROM emp;
 
 SELECT DISTINCT deptno FROM emp;
 
-SELECT DISTINCT deptno,empno FROM emp; --DISTINCT는 or 처럼 작동--
+SELECT DISTINCT deptno,empno FROM emp; --DISTINCT는 or 처럼 작동? 중복도 지움--
 
 SELECT * FROM emp WHERE deptno = 30;
 
