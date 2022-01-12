@@ -40,4 +40,23 @@ SELECT ename, job, sal, sal*12+comm AS asdf
 
 SELECT ename, job, sal, sal*12+comm AS asdf             
     FROM emp
-        WHERE ename LIKE '%S%'                  -- LIKE 사용법 %는 문자수 제한 없고 _는 1개당 1문자 --
+        WHERE ename LIKE '%S%';                -- LIKE 사용법 %는 문자수 제한 없고 _는 1개당 1문자 --
+        
+SELECT ename, job, comm             
+    FROM emp
+        WHERE comm IS NOT NULL;
+        
+SELECT ename, job, sal             
+    FROM emp
+        WHERE ename LIKE '%S%' ;
+        
+-- UNION --
+SELECT deptno, ename, job FROM emp
+UNION
+SELECT deptno, dname, loc FROM dept;
+
+-- UNION        중복이 제거되는 합집합--
+-- UNION ALL  중복 허용 합집합--
+--  MINUS       차집합--
+--  UNTERSECT 교집합--
+
