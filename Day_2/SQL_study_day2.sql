@@ -59,4 +59,5 @@ SELECT deptno, dname, loc FROM dept;
 -- UNION ALL  중복 허용 합집합--
 --  MINUS       차집합--
 --  UNTERSECT 교집합--
+test
 
