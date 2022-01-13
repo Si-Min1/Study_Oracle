@@ -35,7 +35,7 @@ SELECT LTRIM('     반갑다 소년.     ') FROM dual;
 SELECT RTRIM('     반갑다 소년.     ') FROM dual;
 SELECT TRIM('     반갑다 소년.     ') FROM dual; -- 여백 지우기 , 단 문장 사이 여백은 지우지 않음 --
 
-SELECT ROUND(15.193,1) FROM dual;  -- 소수점 반올림 버림은TRUNC --
+SELECT ROUND(15.193,1) FROM dual;  -- 소수점 반올림       버림은TRUNC --
 
 
 -- SYSDATE 시스템 시간 및 날자--
@@ -67,7 +67,7 @@ SELECT ROUND(SUM(sal)/12,2) AS salsum
     FROM emp;
 SELECT SUM(comm) AS salsum
     FROM emp;
-SELECT AVG(comm) AS salsum
+SELECT AVG(comm) AS salavg
     FROM emp;
     
 SELECT MAX(sal)
