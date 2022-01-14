@@ -4,7 +4,7 @@ SELECT LOWER(email), mobile, names, addr, levels
         ORDER BY names DESC;
         
 --2. 책 테이블에서 책제목, 저자, 출판일, 금액 순으로 출력하고 가격이 비싼 순으로 나오게 하십시오. 컬럼이름도 확인하세요!!--
-SELECT names, author, releasedate, price
+SELECT names 책제목, author 저자명, releasedate 출판일, price 가격
     FROM bookstbl
         ORDER BY price DESC;
 
@@ -36,7 +36,7 @@ INSERT INTO membertbl(
     , loginipaddr
     )
 VALUES(
-    SEQ_NOTITLE_IDX.NEXTVAL 
+    SEQ_NOTITLE_IDX.NEXTVAL
     , '홍길동'
     , 'A'
     , '부상시 동구 초량동'
