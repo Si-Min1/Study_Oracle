@@ -13,10 +13,15 @@ SELECT * FROM emp e, dept d WHERE e.deptno = d.deptno;
 
 -- 이 아래는 조인 --
 
-SELECT * FROM emp e 
+SELECT *, COUNT(*) FROM emp e 
     JOIN dept d
-        ON e.deptno = d.deptno;
-        
+        ON e.deptno = d.deptno
+                ORDER BY e.deptno;
+
+SELECT e.deptno, SUM(NVL(e.comm,0)), COUNT(*) FROM emp e, dept d
+        WHERE e.deptno = d.deptno
+            GROUP BY e.deptno;
+
 SELECT DISTINCT job FROM emp;  -- DISTINCT 중복 제거 --
 
 
